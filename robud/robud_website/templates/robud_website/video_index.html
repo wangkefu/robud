@@ -1,0 +1,54 @@
+{% extends "robud_website/base_new.html" %}
+{% load staticfiles %}
+{% block title %}视频教程{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/video-js.css' %}">
+{% endblock %}
+
+
+{% block main_content %}
+
+    <div class="container_fluid video_index_page">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="video_index_top">
+                <img src="{% static 'images/somepages/video_index_top.png' %}" alt="">
+                <p>XXXXXXXX</p>
+                <div class="video_type_wrap">
+                    {% for i in video_type %}
+                        <span><a href="{% url 'robud_website:video_index' i.id  %}">{{ i.name }}</a></span>
+                    {% endfor %}
+
+                </div>
+            </div>
+
+            <div class="video_container">
+                {% for i in videos %}
+                    <div class="video_item">
+                        <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="320" height="264"
+                          data-setup="{}" poster="{{ i.image.url }}">
+                           <source src="{{ i.video.url }}" type='video/mp4' />
+                        </video>
+                    </div>
+                {% endfor %}
+{#                <div class="video_item">#}
+{#                    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="320" height="264"#}
+{#                      data-setup="{}" poster="{% static 'images/news_index/3_03.jpg' %}">#}
+{#                       <source src="{% static 'video/index.mp4' %}" type='video/mp4' />#}
+{#                    </video>#}
+{#                </div>#}
+            </div>
+        </div>
+    </div>
+
+{#    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"#}
+{#      data-setup="{}" poster="{% static 'images/news_index/3_03.jpg' %}">#}
+{#       <source src="{% static 'video/index.mp4' %}" type='video/mp4' />#}
+{#    </video>#}
+
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'js/video.min.js' %}" type="text/javascript" charset="utf-8"></script>
+{% endblock %}

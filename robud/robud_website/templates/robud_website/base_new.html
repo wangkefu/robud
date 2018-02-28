@@ -1,0 +1,173 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base_new.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper-3.4.1.min.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/base/favicon.png' %}">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <div id="rb_head_container">
+        <div class="black_line_wrap">
+
+        </div>
+        <div class="container-fluid nav_container">
+            <div class="sssss">
+                <span><img src="{% static 'images/base/bar.png' %}" alt=""></span>
+            </div>
+            <div class="nav_link_wrap">
+                <div>
+                    <a href="{% url 'robud_website:index' %}"><img class="base_logo" src="{% static 'images/base/logo_03.png' %}" alt=""></a>
+                </div>
+                <div class="nav_item1 nav_item_wrap">
+                    <a href="{% url 'robud_website:products' %}"><img class="nav_icon" src="{% static 'images/base/nav_icon1.png' %}" alt=""><p>一起来玩</p></a>
+                    <div class="nav_dropdown">
+                        <ul class="divi_by_age">
+                            <li>根据年龄</li>
+                        </ul>
+                        <ul class="divi_by_cate">
+                            <li>根据品种</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_item2 nav_item_wrap">
+                    <a href="{% url 'robud_website:news_index' %}"><img class="nav_icon" src="{% static 'images/base/nav_icon2.png' %}" alt=""><p>最新资讯</p></a>
+                    <div class="nav_dropdown">
+                        <ul>
+                            <li style="display: none">xx</li>
+                            <li><a href="">新品上市</a></li>
+                            <li><a href="">活动资讯</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_item3 nav_item_wrap">
+                    <a href="{% url 'robud_website:video_index' %}"><img class="nav_icon" src="{% static 'images/base/nav_icon3.png' %}" alt=""><p>视频教程</p></a>
+                    <div class="nav_dropdown">
+                        <ul class="divi_by_videotype">
+                            <li style="display: none">xx</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_item4 nav_item_wrap">
+                    <a href="{% url 'robud_website:customer_work' %}"><img class="nav_icon" src="{% static 'images/base/nav_icon4.png' %}" alt=""><p>小艺术家</p></a>
+{#                    <div class="nav_dropdown">#}
+{#                        <ul>#}
+{#                            <li style="display: none">xx</li>#}
+{#                            <li><a href="">绘画作品</a></li>#}
+{#                            <li><a href="">粘土作品</a></li>#}
+{#                            <li><a href="">往期回顾</a></li>#}
+{#                        </ul>#}
+{#                    </div>#}
+                </div>
+                <div class="nav_item5 nav_item_wrap">
+                    <a href=""><img class="nav_icon" src="{% static 'images/base/nav_icon5.png' %}" alt=""><p>关于若小贝</p></a>
+                    <div class="nav_dropdown">
+                        <ul>
+                            <li style="display: none">xx</li>
+                            <li><a href="{% url 'robud_website:aboutus_story' %}">我们的故事</a></li>
+                            <li><a href="{% url 'robud_website:aboutus_team' %}">我们的团队</a></li>
+                            <li><a href="{% url 'robud_website:aboutus_promise' %}">我们的承诺</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_item6 nav_item_wrap">
+                    <a href="{% url 'robud_website:purchasechannels' %}"><img class="nav_icon" src="{% static 'images/base/nav_icon6.png' %}" alt=""><p>购买渠道</p></a>
+                    <div class="nav_dropdown">
+                        <ul>
+                            <li style="display: none">xx</li>
+                            <li><a href="">天猫旗舰店</a></li>
+                            <li><a href="">京东旗舰店</a></li>
+                            <li><a href="">线下合作商</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_item7 nav_item_wrap">
+                    <a href="{% url 'robud_website:contact' %}"><img class="nav_icon" src="{% static 'images/base/nav_icon7.png' %}" alt=""><p>联系我们</p></a>
+                </div>
+            </div>
+{#            下拉框#}
+{#            <div class="nav_drap_down">#}
+{#                <div class="">#}
+{#                    #}
+{#                </div>#}
+{#            </div>#}
+        </div>
+        <div class="dropdown_bg">
+
+        </div>
+    </div>
+
+    {% block main_content %}{% endblock %}
+
+    <div id="rb_foot_container" class="container_fluid">
+        <div class="footer_line"></div>
+        <div class="footer_mainwrap">
+            <div class="col-md-8 col-md-offset-2 foot_wrap col-sm-12">
+                <div class="col-md-3 col-sm-3">
+                    <img src="{% static 'images/base/logo_03.png' %}" alt="">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul>
+                        <li>根据年龄</li>
+                        <li><a href="">1-3</a></li>
+                        <li><a href="">3-6</a></li>
+                        <li><a href="">6-8</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul>
+                        <li>关于若小贝</li>
+                        <li><a href="">我们的故事</a></li>
+                        <li><a href="">我们的团队</a></li>
+                        <li><a href="">安全认证</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul>
+                        <li>联系我们</li>
+                        <li><a href="">mark.wang@robotime.com</a></li>
+                        <li><a href="">中国江苏省苏州工业园区星汉街5号C幢三楼305室</a></li>
+                        <li><a href="">备案号：6658421352321115</a></li>
+                        <li>400-710-8099</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul>
+                        <li>购买渠道</li>
+                        <li><a href="">天猫旗舰店</a></li>
+                        <li><a href="">京东旗舰店</a></li>
+                        <li><a href="">线下合作</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul>
+                        <li>根据品类</li>
+                        <li><a href="">绘画</a></li>
+                        <li><a href="">粘土</a></li>
+                        <li><a href="">贴纸</a></li>
+                        <li><a href="">拼图</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul>
+                        <li>购买渠道</li>
+                        <li><a href="">天猫旗舰店</a></li>
+                        <li><a href="">京东旗舰店</a></li>
+                        <li><a href="">线下合作</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2" style="color: white;margin-top: 50px;margin-bottom: 10px">Copyright 2008-2017 © Robud. All Right Reserved</div>
+        </div>
+    </div>
+
+</body>
+<script src="{% static 'js/jquery-3.0.0.min.js' %}" type="text/javascript" charset="utf-8"></script>
+<script src="{% static 'js/swiper-3.4.1.jquery.min.js' %}" type="text/javascript" charset="utf-8"></script>
+<script src="{% static 'js/base.js' %}" type="text/javascript" charset="utf-8"></script>
+{% block js %}{% endblock %}
+</html>

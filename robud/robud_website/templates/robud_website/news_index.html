@@ -1,0 +1,80 @@
+{% extends "robud_website/base_new.html" %}
+{% load staticfiles %}
+{% block title %}一起来玩{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
+{% block main_content %}
+<div class="container_fluid" style="background: #ddd;overflow: hidden">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="new_products_container">
+            <img src="{% static 'images/news_index/3_01.png' %}" alt="">
+            <div class="news_wrap">
+                <div class="news_item">
+                    <img src="{% static 'images/news_index/3_02.jpg' %}" alt="">
+                    <p>[超轻粘土]</p>
+                    <h5>XXXXXXXXXX</h5>
+                    <h6>XXXXXXX</h6>
+                    <h6>XXXXXXX</h6>
+                    <h6>XXXXXXX</h6>
+                    <h6>XXXXXXX</h6>
+                </div>
+                <div class="news_item">
+                    <img src="{% static 'images/news_index/3_03.jpg' %}" alt="">
+                    <p>[超轻粘土]</p>
+                    <h5>XXXXXXXXXX</h5>
+                    <h6>XXXXXXX</h6>
+                    <h6>XXXXXXX</h6>
+                    <h6>XXXXXXX</h6>
+                    <h6>XXXXXXX</h6>
+                </div>
+                <div class="news_item">
+                    <img src="{% static 'images/news_index/3_04.jpg' %}" alt="">
+                    <p>[超轻粘土]</p>
+                    <h5>XXXXXXXXXX</h5>
+                    <h6>XXXXXXX</h6>
+                    <h6>XXXXXXX</h6>
+                    <h6>XXXXXXX</h6>
+                    <h6>XXXXXXX</h6>
+                </div>
+            </div>
+        </div>
+        <div class="activity_news_container">
+            <img src="{% static 'images/news_index/3_05.png' %}" alt="">
+            <div class="activity_wrap">
+                <div class="activity_item_top">
+                    <div class="activity_item">
+                        <img src="{% static 'images/news_index/3_06.jpg' %}" alt="">
+                        <p>2017年9月  若小贝参加香港展</p>
+                        <span>以儿童拼图、积木、回话产品线为主，目标客户群为1-8岁的儿童。意在开发有趣的、增进亲子互动的产品，帮助家长和孩子建立更有意义的互动、教育模式</span>
+                    </div>
+                    <div class="activity_item_long">
+                        <img src="{% static 'images/news_index/3_07.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="activity_item">
+                    <img src="{% static 'images/news_index/3_08.jpg' %}" alt="">
+                    <p>2017年9月  若小贝参加XXX</p>
+                </div>
+                <div class="activity_item">
+                    <img src="{% static 'images/news_index/3_09.jpg' %}" alt="">
+                    <p>2017年9月  若小贝参加XXX</p>
+                </div>
+                <div class="activity_item">
+                    <img src="{% static 'images/news_index/3_10.jpg' %}" alt="">
+                    <p>2017年9月  若小贝参加XXX</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'js/video.min.js' %}" type="text/javascript" charset="utf-8"></script>
+{% endblock %}

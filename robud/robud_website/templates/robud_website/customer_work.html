@@ -1,0 +1,64 @@
+{% extends "robud_website/base_new.html" %}
+{% load staticfiles %}
+{% block title %}一起来玩{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
+{% block main_content %}
+    <div class="container_fluid customer_page">
+        <img src="{% static 'images/somepages/artist_top.jpg' %}" alt="" class="customer_top_img">
+        <div class="container_fluid top_text">
+            <img src="{% static 'images/somepages/artist_text1.png' %}" alt="">
+            <h4>小小艺术家，投票大PK</h4>
+            <h6>活动内容</h6>
+            <p>发送宝贝的作品至微信公众号【若小贝】，通过若小贝设计团队初审后，即可获得在官网参与投票评选的资格；</p>
+            <p>每月最受欢迎的作品将在专业设计师的妙手之下，设计成下月的电脑桌面合历壁纸；</p>
+            <p>被选中作品的小艺术家们可以任选一款若小贝产品作为奖品，年终还可以收到年终大礼包一份</p>
+        </div>
+
+        <div class="container_fluid content_wrap">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="cate_wrap buttons_wrap">
+                    {% for i in cate %}
+                        {% if forloop.first %}
+                            <span><b data-id="{{ i.id }}" class="active_customer">{{ i.name }}</b></span>
+                        {% else %}
+                            <span><b data-id="{{ i.id }}">{{ i.name }}</b></span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="month_wrap buttons_wrap">
+                    {% for i in month %}
+                        <span><b data-id="{{ i.0 }}">{{ i.1 }}</b></span>
+                    {% endfor %}
+                </div>
+                <div class="works_wrap">
+                    {% for i in images %}
+                        <div class="works_item col-md-3 col-sm-6" data-id="{{ i.id }}">
+                            <img src="{{i.image}}" alt="">
+                            <span>{{ i.author }}</span>
+                            <span>{{ i.age }}</span>
+                            <span class="like">
+                                <i>{{ i.likes }}</i>
+                                {% if i.visitor_like %}
+                                    <span class="glyphicon glyphicon-heart" style="color: red;"></span>
+                                {% else %}
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                {% endif %}
+                            </span>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'js/video.min.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'js/like.js' %}" type="text/javascript" charset="utf-8"></script>
+{% endblock %}

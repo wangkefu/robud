@@ -1,0 +1,168 @@
+{% extends "robud_website/base_new.html" %}
+{% load staticfiles %}
+{% block title %}购买渠道{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
+{% block main_content %}
+    <div class="container_fluid">
+        <img style="width: 100%" src="{% static 'images/somepages/purchasechannels_top.jpg' %}" alt="">
+        <div class="about_top_line"></div>
+    </div>
+
+    <div class="col-md-8 col-md-offset-2" style="text-align: center">
+        <img src="{% static 'images/somepages/purchase_underline.png' %}" alt="" style="margin-top: 80px;margin-bottom: 80px">
+        <div class="shops_wrap">
+            <div class="col-md-3">
+                <span class="shop_city">北京市</span>
+                <div class="shop_details">
+                    <p>
+                        <span>19八3-北京APM店</span>
+                        <span>北京市东城区王府井大街138号新东安广场四层</span>
+                    </p>
+                    <p>
+                        <span>19八3-北京通州店</span>
+                        <span>北京市通州区新华北街55号通州万达广场3029号</span>
+                    </p>
+                    <p>
+                        <span>泡泡马特-北京大悦城店</span>
+                        <span>北京市朝阳区朝阳北路101号大悦城购物中心B1-12</span>
+                    </p>
+                    <p>
+                        <span>19八3-北京王府井店</span>
+                        <span>北京市东城区王府井大街新东安广场F3层306号</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <span class="shop_city">上海市</span>
+                <div class="shop_details">
+                    <p>
+                        <span>晨光生活馆-上海书城店</span>
+                        <span>上海市黄浦区福州路465号上海书城1楼</span>
+                    </p>
+                    <p>
+                        <span>泡泡马特-上海港汇恒隆店</span>
+                        <span>上海市徐家汇虹桥路1号港汇恒隆广场B108L</span>
+                    </p>
+                    <p>
+                        <span>九木杂物社-上海七宝万科店</span>
+                        <span>上海市漕宝路3366号七宝万科广场商场3层</span>
+                    </p>
+                    <p>
+                        <span>猫的天空之城</span>
+                        <span>上海市黄浦区马当路245号星光天地时尚购物中心B1</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <span class="shop_city">江苏省</span>
+                <div class="shop_details">
+                    <p>
+                        <span>诚品书店</span>
+                        <span>苏州市工业园区月廊街8号2-3F</span>
+                    </p>
+                    <p>
+                        <span>泡泡马特-苏州印象城店</span>
+                        <span>苏州市现代大道1699号印象城购物中心3F3002</span>
+                    </p>
+                    <p>
+                        <span>哈姆雷特-南京店</span>
+                        <span>南京市秦淮区汉中路1号</span>
+                    </p>
+                    <p>
+                        <span>九木杂物社-无锡恒隆店</span>
+                        <span>无锡市人民中路139号无锡恒隆广场地下一层102号</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <span class="shop_city">浙江省</span>
+                <div class="shop_details">
+                    <p>
+                        <span>酷乐潮玩-杭州来福士店</span>
+                        <span>杭州江干区富春路口来福士广场5楼35号</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <span class="shop_city">四川省</span>
+                <div class="shop_details">
+                    <p>
+                        <span>言几又-成都IFS店</span>
+                        <span>成都市锦江区红星路二段1号</span>
+                    </p>
+                    <p>
+                        <span>方所-成都店</span>
+                        <span>成都市锦江区中纱街8号</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <span class="shop_city">山东省</span>
+                <div class="shop_details">
+                    <p>
+                        <span>新华书店-青岛书城</span>
+                        <span>山东省青岛市市南区香港中路67号</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <span class="shop_city">湖南省</span>
+                <div class="shop_details">
+                    <p>
+                        <span>弘道书店-长沙华创店</span>
+                        <span>长沙市开福区芙蓉路华创国际国际广场负一层</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <span class="shop_city">广东省</span>
+                <div class="shop_details">
+                    <p>
+                        <span>方所-广州店</span>
+                        <span>广州市天河区天河路383号</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8 col-md-offset-2 online_shop">
+        <img src="{% static 'images/somepages/purchase_online.png' %}" alt="" style="margin-top: 80px;margin-bottom: 80px">
+        <div>
+            <div class="col-md-6 tmall_shop">
+                <a href="">
+                    <p>若小贝天猫旗舰店</p>
+                    <p>进入店铺</p>
+                </a>
+                <div class="">
+                    <img src="{% static 'images/somepages/tmall.png' %}" alt="">
+                    <span>XXXXXXXXXXXXXXXXXXXXXXXX</span>
+                </div>
+                <img src="{% static 'images/somepages/under_tmall.jpg' %}" alt="">
+            </div>
+            <div class="col-md-6 jd_shop">
+                <a href="">
+                    <p>若小贝京东旗舰店</p>
+                    <p>进入店铺</p>
+                </a>
+                <div class="">
+                    <img src="{% static 'images/somepages/jd.png' %}" alt="">
+                    <span>XXXXXXXXXXXXXXXXXXXXXXXX</span>
+                </div>
+                <img src="{% static 'images/somepages/under_jd.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'js/video.min.js' %}" type="text/javascript" charset="utf-8"></script>
+
+{% endblock %}

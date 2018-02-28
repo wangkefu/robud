@@ -1,0 +1,129 @@
+{% extends "robud_website/base_new.html" %}
+{% load staticfiles %}
+{% block title %}关于若小贝{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
+{% block main_content %}
+    <div class="container_fluid">
+        <img style="width: 100%" src="{% static 'images/aboutus/top.jpg' %}" alt="">
+        <div class="about_top_line"></div>
+    </div>
+
+    <div class="container_fluid aboutus_main">
+        <div class="col-md-8 col-md-offset-2">
+            <div style="width: 100%;overflow: hidden"><img class="col-md-3" src="{% static 'images/aboutus/ourstory_text.png' %}" alt=""></div>
+            <div class="story_wrap">
+                <div class="aboutus_item">
+                    <img class="col-md-3" src="{% static 'images/aboutus/ourstory_icon.png' %}" alt="">
+                    <div class="story_text col-md-9">
+                        <p>若小贝，中国知名美学教育品牌，诞生于“每一个孩子都是艺术家”的理念，梦想着将艺术和教育相结合。一群大孩子设计师，以技术启发艺术，艺术挑战技术，不断进行一次又一次有关创意和爱的尝试。</p>
+                        <p>他们既是最好的画家，也是最好的作家，同时还是十级的早教学者！</p>
+                        <p>热诚成就了若小贝。经历了长久的准备，从手指画的研究到填色书的丰富再到“绘色彩”涂色木质拼图的创新，产品队伍正在逐渐扩大。</p>
+                        <p>若小贝，英文名Robud，bud为萌芽，意为呵护每一个艺术启蒙的孩子。作为始于童心、忠于艺术、勇于表达的原创品牌，若小贝以“活泼、趣味、美学、成长”为核心理念，专注儿童创意玩乐体验，启发儿童艺术天赋，发散儿童美学认知。</p>
+                        <p>在这里，我们相信每一个孩子的“白日梦”，欢迎每一个孩子的“为什么”，禁止“有样学样”，期待“天马行空”。</p>
+                        <p>“若小贝，不做泛泛之辈！”会是我们一直坚持的主题。不做同类品牌的复制品，我们只会更多、更新、更有深度！</p>
+                    </div>
+                </div>
+                <div class="aboutus_item">
+                    <img class="col-md-3" src="{% static 'images/aboutus/yanfa_text.png' %}" alt="">
+                    <div class="col-md-9">
+                        <img src="{% static 'images/aboutus/yanfa_img.jpg' %}" alt="">
+                        <p>他们是发现创想的专家，他们是擅长造梦的魔术师，他们以敏锐的嗅觉和聪慧的大脑，让梦想照进灵魂。</p>
+                    </div>
+                </div>
+                <div class="aboutus_item">
+                    <img class="col-md-3" src="{% static 'images/aboutus/pingmian_text.png' %}" alt="">
+                    <div class="col-md-9">
+                        <img src="{% static 'images/aboutus/pingmian_img.jpg' %}" alt="">
+                        <p>他们是最会用画面表达的聪明人他们是将一切琐碎有机整合的高手，他们以形式美和神创作，勾勒生活。</p>
+                    </div>
+                </div>
+                <div class="aboutus_item">
+                    <img class="col-md-3" src="{% static 'images/aboutus/chahua_text.png' %}" alt="">
+                    <div class="col-md-9">
+                        <img src="{% static 'images/aboutus/chahua_img.jpg' %}" alt="">
+                        <p>他们是勾勒童话生活的画师，他们是描述梦想乐园的天使，他们以画作讲述故事，启迪心智。</p>
+                    </div>
+                </div>
+                <div class="aboutus_item">
+                    <img class="col-md-3" src="{% static 'images/aboutus/gongye_text.png' %}" alt="">
+                    <div class="col-md-9">
+                        <img src="{% static 'images/aboutus/gongye_img.jpg' %}" alt="">
+                        <p>他们是将美学运用到实际中的生活家，他们是理性和感性并肩的双面伊人，他们为无趣的俗物，注入艺术般的美好。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+            <img class="col-md-3" src="{% static 'images/aboutus/promise.png' %}" alt="" style="margin-top: 80px;margin-bottom: 80px">
+        </div>
+        <div class="ch_bottom_wraper col-md-8 col-md-offset-2">
+            <div class="ch_qty_assure">
+                <div class="ch_title2">品质保证</div>
+                <div class="col-md-4"><img class="index_icon" src="{% static 'images/aboutus/about_icon1.png' %}"/></div>
+                <div class="col-md-8">
+                    <p>原料</p>
+                    <div>木材原料通过可持续森林认证(FSC)和甲醛测试，符合国家对木制玩具质量法律法规要求，通过欧盟EN71-9标准、美国ASTM F963标准，符合国际EO胶严格检测标准</div>
+                </div>
+                <div class="col-md-4"><img class="index_icon" src="{% static 'images/aboutus/about_icon2.png' %}"/></div>
+                <div class="col-md-8">
+                    <p>产品涂层</p>
+                    <div>玩具涂料的使用符合国内GB6675标准和美国ASTM F963中8项可溶性元素检测标准，通过欧盟质量标准(欧盟EN71中做的是19项可溶性元素检测，要求严格)。若态工厂严格把关进料：选择合格供应商；把好原料采购关，选择符合进口国要求的玩具专用涂料；加强原料进场检测，对购进的涂料采用批次管理，保证原料安全可靠性。</div>
+                    <p style="margin-top: 30px;">包装</p>
+                    <div>产品包装材料采用可循环无污害材料，符合国际质量要求标准。</div>
+                </div>
+                <div class="col-md-4"><img class="index_icon" src="{% static 'images/aboutus/about_icon3.png' %}"/></div>
+                <div class="col-md-8">
+                    <p>生产工艺</p>
+                    <div>工厂生产运用PDCA模式指导各过程运作，确保各部门协调、高校配合。工厂根据《出口玩具质量许可（注册登记）实施细则》和《出口玩具生产企业质量许可（注册登记）审核要求》的要求，对质量管理体系的建立、实施、保持进行控制，并持续改进其有效性。落实“满足顾客要求、增强顾客满意”的具体内容。生产时，为保证原料的各项使用限度和有害物质符合国际质量安全标准，选择适宜的生产工艺；严格控制生产过程添加的化学物质及用量；注意生产工具管理，避免工具污染；加强涂料储存管理；运用特殊木片切割技术对每一片木片进行精密切割，保证木片边缘圆润，手感良好。所有出厂产品通过3C质量体系验证，SGS全球专业机构质量认证，通过第三方认证机构实验室更新产品测试报告</div>
+                    <p style="margin-top: 30px;">确保</p>
+                    <div>安全卫生项目抽检合格率达到100%；无重大顾客质量投诉</div>
+                </div>
+                <div class="col-md-4"><img class="index_icon" src="{% static 'images/aboutus/about_icon4.png' %}"/></div>
+                <div class="col-md-8">
+                    <p>贴心服务</p>
+                    <div>每套产品赠送一张打磨纸，用于打磨木片局部锋利边角处，保护儿童稚嫩的皮肤。（采用美国进口圣戈班诺顿银熊水砂纸，无毒无味，安全环保，若态提供绝对放心的安全砂纸）产品包装内的拼装说明图纸详细易懂，保证孩子们能够轻松理解，立刻享受拼图的乐趣。若态正在为每位顾客提供绿色环保、安全可靠的游戏体验!</div>
+                </div>
+            </div>
+
+            <div class="ch_certification">
+                <div class="ch_title3">资格证书</div>
+                <div class="col-md-6" style="margin-top: 30px;padding: 0;">
+                    <img src="{% static 'images/aboutus/cert1.jpg' %}"/>
+                    <div class="ch_certi_message">Disney FAMA 迪士尼授权工厂</div>
+                </div>
+                <div class="col-md-6" style="margin-top: 30px;padding: 0;">
+                    <img src="{% static 'images/aboutus/cert2.jpg' %}"/>
+                    <div class="ch_certi_message">FSC 国际生态环保认证企业</div>
+                </div>
+                <div class="col-md-6" style="margin-top: 30px;padding: 0;">
+                    <img src="{% static 'images/aboutus/cert3.jpg' %}"/>
+                    <div class="ch_certi_message">GMC 环球制造商</div>
+                </div>
+                <div class="col-md-6" style="margin-top: 30px;padding: 0;">
+                    <img src="{% static 'images/aboutus/cert4.jpg' %}"/>
+                    <div class="ch_certi_message">BSCI 欧洲认证企业</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'js/video.min.js' %}" type="text/javascript" charset="utf-8"></script>
+    {% if scroll %}
+        <script>
+            var data = {{ top|safe }}
+            console.log(parseInt(data));
+            if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                $("html,body").animate({"scrollTop": parseInt(data)+100 + 'px'}, 600);
+            } else {
+                $("html,body").animate({"scrollTop": parseInt(data) + 'px'}, 600);
+            }
+        </script>
+    {% endif %}
+{% endblock %}

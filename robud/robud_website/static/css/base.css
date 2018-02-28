@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+html,body{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'MyNewFont';   /*字体名称*/
+    src: url('happy.ttf');       /*字体源文件*/
+}
+body{
+    font-family:MyNewFont;
+    font-size: 20px;
+}
+.container_fluid{
+    width: 100%;
+}
+#rb_head_container .nav_container{
+    background-color: #f15a29;
+}
+#rb_head_container>.black_line_wrap{
+    width:100%;
+    height: 28px;
+    background-color: #000;
+    /*margin-bottom: 20px;*/
+}
+#rb_head_container>.black_line_wrap>img{
+    width: 100%;
+}
+#rb_head_container .nav_link_wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 66.6%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+#rb_head_container .nav_link_wrap>div{
+    display: inline-block;
+    text-align: center;
+}
+#rb_head_container .nav_link_wrap a{
+    color: black;
+    text-decoration: none;
+}
+#rb_head_container .nav_link_wrap p{
+    /*font-family:MyNewFont;*/
+    color: white;
+    margin-top: 5px;
+    font-size: 16px;
+}
+#rb_head_container .base_logo{
+    /*margin-top: 15px;*/
+}
+#rb_head_container .base_phone{
+    margin-top: 10px;
+}
+
+.nav_dropdown{
+    position: absolute;
+    background-color: #555555;
+    z-index: 1000;
+    padding: 10px;
+    display: none;
+}
+.nav_dropdown>ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    color: white;
+    text-align: left;
+}
+.nav_dropdown>ul>li:first-child{
+    margin-bottom: 5px;
+}
+#rb_head_container .nav_dropdown>ul>li>a{
+    color: white;
+}
+#rb_head_container .nav_dropdown>ul>li>a:hover{
+    text-decoration: underline;
+}
+.dropdown_bg{
+    background-color: #555555;
+    width: 100%;
+    position: absolute;
+    top: 147px;
+    z-index: 100;
+}
+@media screen and (max-width: 1500px) {
+    .nav_icon{
+        width: 72px;
+    }
+    #rb_head_container .nav_item_wrap p{
+        font-size: 12px;
+    }
+    #rb_head_container .base_logo{
+        width: 100px;
+    }
+    .dropdown_bg{
+        top: 130px;
+    }
+    .nav_dropdown a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 960px)  {
+    .container_fluid{
+        width: 960px;
+    }
+}
+
+
+
+
+#rb_foot_container .footer_line{
+    background-color: #f15a29;
+    height: 8px;
+}
+#rb_foot_container{
+    background-color: #000;
+    overflow: hidden;
+}
+.foot_wrap{
+    padding-top: 50px;
+    color: white;
+}
+.foot_wrap a{
+    color: #d4d4d4;
+}
+.foot_wrap a:hover{
+    color: #d4d4d4;
+}
+.foot_wrap ul>li:first-child{
+    font-size: 16px;
+}
+.foot_wrap ul li{
+    margin-bottom: 3px;
+}
+#index_lunbo .swiper-pagination-bullet-active{
+    background: #f15a29;
+}

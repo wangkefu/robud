@@ -1,0 +1,75 @@
+{% extends "robud_website/base_new.html" %}
+{% load staticfiles %}
+{% block title %}一起来玩{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
+{% block main_content %}
+    <div class="container_fluid">
+        <div class="products_lunbo">
+            <div class="swiper-container" style="text-align: center">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/somepages/products_lunbo1.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/somepages/products_lunbo1.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/somepages/products_lunbo1.jpg' %}"/>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_fluid">
+        <div class="products_container">
+            <div class="products_top_text">
+                <img src="{% static 'images/somepages/products_text.png' %}" alt="">
+{#                <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>#}
+                <div class="products_labels">
+                    {% for i in label_category %}
+                        <span><a href="{% url 'robud_website:products' i.type i.id  %}">{{ i.name }}</a></span>
+                    {% endfor %}
+                    {% for i in label_age %}
+                        <span><a href="{% url 'robud_website:products' i.type i.id  %}">{{ i.name }}</a></span>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="products_wrap row">
+                {% for i in products %}
+                    <div>{{ i.name }}</div>
+                    {% for item in i.images %}
+                        <div class="products_item col-md-3 col-sm-6">
+                            <img src="{{item.image.url}}" alt="">
+                            <div class="product_info">
+                                <p>{{ item.name }}</p>
+                                {% if item.size %}
+                                    <p>组装尺寸：{{ item.size }}</p>
+                                {% endif %}
+                                {% if item.pack_size %}
+                                    <p>包装尺寸：{{ item.pack_size }}</p>
+                                {% endif %}
+                                {% if item.wood_qty %}
+                                    <p>木片数量：{{ item.wood_qty }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'js/video.min.js' %}" type="text/javascript" charset="utf-8"></script>
+{% endblock %}

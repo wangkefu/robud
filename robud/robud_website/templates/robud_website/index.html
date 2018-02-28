@@ -1,0 +1,98 @@
+{% extends "robud_website/base_new.html" %}
+{% load staticfiles %}
+{% block title %}若小贝{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/video-js.css' %}">
+{% endblock %}
+
+{% block main_content %}
+    <div id="index_lunbo">
+    	<div class="container_fluid">
+    		<div class="swiper-container" style="text-align: center">
+    			<div class="swiper-wrapper">
+    				<div class="swiper-slide">
+    					<img src="{% static 'images/index/index_lunbo1.jpg' %}"/>
+    				</div>
+    				<div class="swiper-slide">
+    					<img src="{% static 'images/index/index_lunbo2.jpg' %}"/>
+    				</div>
+    				<div class="swiper-slide">
+    					<img src="{% static 'images/index/index_lunbo3.jpg' %}"/>
+    				</div>
+    			</div>
+                <div class="swiper-pagination"></div>
+    		</div>
+    	</div>
+    </div>
+
+    <div id="index_grow">
+        <div class="container_fluid" style="overflow: hidden">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="grow_item_wrap">
+                    <div class="grow_item">
+                        <a href=""><img src="{% static 'images/index/index_hre1.png' %}" alt=""><span>动手能力培养</span></a>
+                        <img class="grow_hover" src="{% static 'images/index/grow_hover.png' %}" alt="">
+                    </div>
+                    <div class="grow_item">
+                        <a href=""><img src="{% static 'images/index/index_hre2.png' %}" alt=""><span>形象、色彩认知</span></a>
+                        <img class="grow_hover" src="{% static 'images/index/grow_hover.png' %}" alt="">
+                    </div>
+                    <div class="grow_item">
+                        <a href=""><img src="{% static 'images/index/index_hre3.png' %}" alt=""><span>创意意识勃发</span></a>
+                        <img class="grow_hover" src="{% static 'images/index/grow_hover.png' %}" alt="">
+                    </div>
+                    <div class="grow_item" style="margin-right: 0">
+                        <a href=""><img src="{% static 'images/index/index_hre4.png' %}" alt=""><span>亲子互动加强</span></a>
+                        <img class="grow_hover" src="{% static 'images/index/grow_hover.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="index_stand_byme">
+        <div class="container_fluid" style="overflow: hidden;padding-bottom: 100px">
+            <div class="col-md-8 col-md-offset-2 byme_wrap">
+                <img style="margin-top: 50px" src="{% static 'images/index/byme_icon6.png' %}" alt="">
+                <p class="col-md-8 col-md-offset-2">若小贝，来自若态旗舰下的儿童玩具品牌，诞生于“每一个孩子都是艺术家”的理念，梦想将艺术和教育结合。一群大孩子设计师，以技术启发艺术，以艺术挑战技术，不断进行一次又一次有关创意和爱的尝试</p>
+                <div class="byme_item_wrap">
+                    <div class="byme_item">
+                        <a href=""><img src="{% static 'images/index/byme_item1.png' %}" alt=""><span>我们的工厂</span></a>
+                    </div>
+                    <div class="byme_item">
+                        <a href=""><img src="{% static 'images/index/byme_item2.png' %}" alt=""><span>我们的团队</span></a>
+                    </div>
+                    <div class="byme_item">
+                        <a href=""><img src="{% static 'images/index/byme_item3.png' %}" alt=""><span>获奖证书</span></a>
+                    </div>
+                    <div class="byme_item">
+                        <a href=""><img src="{% static 'images/index/byme_item4.png' %}" alt=""><span>活动资讯</span></a>
+                    </div>
+                </div>
+                <img class="byme_icon1" src="{% static 'images/index/byme_icon1.png' %}" alt="更多教程">
+                <img class="byme_icon2" src="{% static 'images/index/byme_icon2.png' %}" alt="">
+                <img class="byme_icon3" src="{% static 'images/index/byme_icon3.png' %}" alt="">
+                <img class="byme_icon4" src="{% static 'images/index/byme_icon4.png' %}" alt="">
+                <img class="byme_icon5" src="{% static 'images/index/byme_icon5.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="cooperation">
+        <div class="container_fluid" style="overflow: hidden;padding-bottom: 100px">
+            <div class="col-md-8 col-md-offset-2 coop_wrap">
+                <img class="coop1" src="{% static 'images/index/coop1.png' %}" alt="">
+                <img class="coop2" src="{% static 'images/index/coop2.png' %}" alt="">
+                <p style="color: #939598;margin-top: 10px">合作伙伴</p>
+                <img style="width: 80%;margin-top: 10px" src="{% static 'images/index/coop3.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/video.min.js' %}" type="text/javascript" charset="utf-8"></script>
+{% endblock %}

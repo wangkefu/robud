@@ -1,0 +1,96 @@
+{% extends "robud_website/base_new.html" %}
+{% load staticfiles %}
+{% block title %}联系我们{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
+{% block main_content %}
+    <div class="container-fluid" style="padding: 0;">
+        <img style="width: 100%" src="{% static 'images/somepages/contact_top.jpg' %}" alt="">
+        <div class="about_top_line"></div>
+    </div>
+
+    <div class="container-fluid contact_wrap">
+        <div class="col-md-8 col-md-offset-2 contact_main">
+            <div class="contact_left" style="padding-right: 10px">
+                <img style="margin-left: -20px" src="{% static 'images/somepages/businesscoop.png' %}" alt="">
+                <p>一、合作条件</p>
+                <div>1.认同若小贝文化和事业发展方向，以及市场营销理念，有共同发展的思路和决心；</div>
+                <div>2.严格执行若小贝的销售政策，并适应若小贝的经营方式和规章制度，自觉维护企业形象；</div>
+                <div>3.有自己的门市或销售渠道，并自有仓库长期备货及一定的资金能力；</div>
+                <div>4.能积极配合公司营销、技术、促销团队、给予的一系列后续服务。</div>
+                <p>二、合作优势</p>
+                <div>1.加入若小贝，无需加盟费用，携手与您稳步持续发展；</div>
+                <div>2.畅销于玩具、图书、礼品、精品店等多个市场；</div>
+                <div style="margin-top: 30px">我们拥有成熟的DIY产品的制造工艺，天然无公害颜料配方，产品均符合各类欧美和国家安全制造标准，并获得SGS专业机构多项质量认证，享国家多项专利；</div>
+                <div style="margin-top: 10px">国内原创研发团队，致力于益智类、艺术早教类的产品研发，每年至少有两个系列的新品上市，始终走在潮流之前</div>
+                <div style="margin-top: 10px">与众多电视少儿频道、报纸、互联网、自媒体等媒介组织，学校教育机构、图书市场、幼儿园等有着密切的合作关系和行之有效的宣传支持。</div>
+            </div>
+            <div class="contact_right">
+                <div>
+                    <img src="{% static 'images/somepages/contact.png' %}" alt="">
+                    <p>联系我们</p>
+                    <div>
+                        <span>江苏省苏州市工业园区星汉街腾飞工业坊C幢305室</span>
+                        <span>服务热线：400-710-8099</span>
+                    </div>
+                    <p>国际业务</p>
+                    <div>
+                        <span>魏先生</span>
+                        <span>QQ: 2355419370</span>
+                        <span>手机: 13584887767</span>
+                        <span>邮箱: willian.wei@robotime.com</span>
+                    </div>
+                    <p>国内业务</p>
+                    <div>
+                        <span>唐先生</span>
+                        <span>QQ: 2355419373</span>
+                        <span>手机: 181358528999</span>
+                        <span>邮箱: taylor.tang@robotime.com</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="{% static 'images/somepages/promotecoop.png' %}" alt="">
+                    <p>联系方式</p>
+                    <div>
+                        <span>刘女士</span>
+                        <span>QQ: 75537787</span>
+                        <span>手机: 1391314899987</span>
+                        <span>邮箱: jean.liu@robotime.com</span>
+                    </div>
+                    <div class="contact_erweima">
+                        <span>[关注我们的微信公众号]</span>
+                        <img src="{% static 'images/somepages/contact_wechat.jpg' %}" alt="">
+                    </div>
+                    <div class="contact_erweima">
+                        <span>[关注我们的微博公众号]</span>
+                        <img src="{% static 'images/somepages/contact_weibo.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recruit_wrap container-fluid">
+        <div class="col-md-8 col-md-offset-2 recruit_main">
+            <img src="{% static 'images/somepages/recruit.png' %}" alt="">
+            <p style="margin-top: 30px">你有梦想、有才华、有创意，我有任你发挥的舞台</p>
+            <p>我们常年招聘玩具设计师、结构设计师、平面设计师、内贸、外贸销售等优秀人才</p>
+            <p style="margin-top: 20px">联系人：周宛菊</p>
+            <p>电话：18550347909</p>
+            <p>邮箱：julie.zhou@robotime.com</p>
+            <div>
+                <img class="col-md-6" src="{% static 'images/somepages/recruit_img1.jpg' %}" alt="">
+                <img class="col-md-6" src="{% static 'images/somepages/recruit_img2.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'js/video.min.js' %}" type="text/javascript" charset="utf-8"></script>
+
+{% endblock %}
